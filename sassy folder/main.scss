@@ -1,0 +1,30 @@
+@import '_contact';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    word-break: break-word;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    header{
+        position: sticky;
+        top: 0;
+        background-color:aquamarine;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        nav{
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            *{
+                flex: 1;
+                text-align: center;
+                padding: 5px;
+                background-color: red;
+            }
+        }
+    }
+}
