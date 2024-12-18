@@ -14,17 +14,15 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 5px;
-        nav{
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        *{
             flex: 1;
-            display: flex;
-            justify-content: space-around;
-            background-color: #fff;
-            *{
-                flex: 1;
-                text-align: center;
-                padding: 5px;
-                background-color: red;
-            }
+            text-align: center;
+            padding: 5px;
+            background-color: red;
         }
     }
 }
