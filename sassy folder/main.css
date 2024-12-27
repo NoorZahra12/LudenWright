@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  word-break: break-word;
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
@@ -13,16 +12,31 @@ body header {
   display: flex;
   justify-content: space-between;
   padding: 5px;
-}
-body header nav {
   flex: 1;
   display: flex;
   justify-content: space-around;
   background-color: #fff;
+  height: 30px;
 }
-body header nav * {
+body header * {
   flex: 1;
   text-align: center;
   padding: 5px;
-  background-color: red;
+}
+body header #logo {
+  display: flex;
+  align-items: center;
+  word-break: normal;
+}
+body header #logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: auto;
+  transform: scale(1.8);
+}
+@media (max-width: 570px) {
+  body header #logo {
+    display: none; /* Hides the logo on screens 570px wide or smaller */
+  }
 }/*# sourceMappingURL=main.css.map */
